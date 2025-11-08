@@ -3,5 +3,11 @@
   "compatibility_date": "2025-11-07",
   "assets": {
     "directory": "./"
-  }
+  },
+  "send_email": [
+    {
+      "name": "CONTACT_FORM",
+      "destination_address": "info@pwmcare.com"
+    }
+  ]
 }
