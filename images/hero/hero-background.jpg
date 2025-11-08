@@ -1,0 +1,47 @@
+<svg width="1920" height="1080" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional medical background -->
+  <defs>
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2E5B8A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A9B9B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E5B8A;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Pattern for subtle texture -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <rect width="40" height="40" fill="none"/>
+      <circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#heroBg)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Decorative medical elements -->
+  <!-- Subtle medical cross -->
+  <g opacity="0.1">
+    <rect x="1600" y="200" width="80" height="240" fill="white"/>
+    <rect x="1520" y="280" width="240" height="80" fill="white"/>
+  </g>
+
+  <!-- Subtle heartbeat line -->
+  <g opacity="0.15" stroke="white" stroke-width="4" fill="none">
+    <polyline points="100,540 300,540 350,400 400,680 450,540 650,540"/>
+    <polyline points="700,540 900,540 950,400 1000,680 1050,540 1250,540"/>
+    <polyline points="1300,540 1500,540 1550,400 1600,680 1650,540 1800,540"/>
+  </g>
+
+  <!-- Abstract medical imagery - representing healing and care -->
+  <g opacity="0.2">
+    <circle cx="200" cy="200" r="100" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="200" cy="200" r="80" stroke="white" stroke-width="2" fill="none"/>
+    <circle cx="200" cy="200" r="60" stroke="white" stroke-width="1" fill="none"/>
+  </g>
+
+  <g opacity="0.2">
+    <circle cx="1700" cy="850" r="80" stroke="white" stroke-width="3" fill="none"/>
+    <circle cx="1700" cy="850" r="60" stroke="white" stroke-width="2" fill="none"/>
+    <circle cx="1700" cy="850" r="40" stroke="white" stroke-width="1" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,579 @@
+/* =================================================================
+   Precision Wound Management - Responsive Stylesheet
+   Mobile-First Design
+   ================================================================= */
+
+/* === Mobile Styles (Base - up to 767px) === */
+
+/* Mobile Navigation */
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .menu-toggle.active .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 2rem 2rem;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 1rem;
+    border-bottom: none;
+    border-left: 3px solid transparent;
+  }
+
+  .nav-menu li a:hover,
+  .nav-menu li a:focus,
+  .nav-menu li a.active {
+    background: var(--light-bg);
+    border-left-color: var(--primary-blue);
+  }
+
+  /* Header adjustments */
+  .header-content {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.75rem;
+  }
+
+  .header-contact {
+    order: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-contact .btn-phone {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .main-nav {
+    order: 3;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 80vh;
+    padding: 3rem 0;
+    background-attachment: scroll;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-location {
+    font-size: 1rem;
+    flex-direction: column;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  /* Sections */
+  section {
+    padding: 3rem 0;
+  }
+
+  /* Values Grid */
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Services Grid */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* About Grid */
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  /* Profile Grid */
+  .profile-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-left .profile-image,
+  .profile-right .profile-image {
+    order: -1;
+  }
+
+  /* Benefits Grid */
+  .benefit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Process Steps */
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+
+  /* Provider Contact Grid */
+  .provider-contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Program Grid */
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Payment Methods */
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+
+  /* Insurance List */
+  .insurance-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Office Grid */
+  .office-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Form Rows */
+  .form-row:has(.form-group:nth-child(2)) {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    padding: 2rem 1.5rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 15px;
+  }
+
+  /* Mission Statement */
+  .mission-statement {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+
+  /* Profile Quote */
+  .profile-quote {
+    font-size: 1.125rem;
+    padding: 1rem;
+  }
+
+  /* Page Intro */
+  .page-intro {
+    font-size: 1.125rem;
+  }
+
+  /* Accordion */
+  .accordion-header {
+    padding: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .service-details {
+    padding: 0 1rem 1rem;
+  }
+}
+
+/* === Tablet Styles (768px - 1023px) === */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .header-content {
+    gap: 2rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .payment-methods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .insurance-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .office-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-row:has(.form-group:nth-child(2)) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-cta {
+    flex-direction: row;
+  }
+}
+
+/* === Desktop Styles (1024px and above) === */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 40px;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .payment-methods {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .insurance-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+}
+
+/* === Large Desktop Styles (1440px and above) === */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
+
+/* === Print Styles === */
+@media print {
+  .site-header,
+  .site-footer,
+  .menu-toggle,
+  .skip-link,
+  .btn,
+  .contact-cta,
+  .hero-cta,
+  .section-cta {
+    display: none;
+  }
+
+  .hero {
+    background: none;
+    color: var(--text-dark);
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 20pt;
+  }
+
+  h3 {
+    font-size: 16pt;
+  }
+
+  section {
+    padding: 1rem 0;
+  }
+
+  .accordion-item {
+    page-break-inside: avoid;
+  }
+
+  .accordion-content {
+    max-height: none !important;
+    display: block;
+  }
+}
+
+/* === Reduced Motion === */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* === High Contrast Mode === */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    border: 3px solid var(--white);
+  }
+
+  .btn-secondary {
+    border: 3px solid var(--primary-blue);
+  }
+
+  .accordion-item {
+    border-width: 3px;
+  }
+}
+
+/* === Dark Mode Support (Optional) === */
+@media (prefers-color-scheme: dark) {
+  /* This is left empty intentionally - medical sites typically don't use dark mode
+     but the media query is here if needed in the future */
+}
+
+/* === Landscape Orientation (Mobile) === */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero h2 {
+    font-size: 1.125rem;
+  }
+}
+
+/* === Touch Device Optimizations === */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets for mobile */
+  .btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .nav-menu li a {
+    min-height: 44px;
+  }
+
+  .accordion-header {
+    min-height: 44px;
+  }
+
+  .menu-toggle {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on touch devices */
+  .value-card:hover,
+  .service-card:hover,
+  .benefit-item:hover {
+    transform: none;
+  }
+}
+
+/* === Specific Breakpoint Adjustments === */
+
+/* Small tablets in portrait */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .profile-grid {
+    gap: 3rem;
+  }
+
+  .about-grid {
+    gap: 3rem;
+  }
+}
+
+/* Medium screens */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+/* === Fix for iOS Safari === */
+@supports (-webkit-touch-callout: none) {
+  /* iOS-specific styles */
+  .hero {
+    background-attachment: scroll;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important; /* Prevents zoom on focus */
+  }
+}

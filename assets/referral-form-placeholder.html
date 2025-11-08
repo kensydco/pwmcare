@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provider Referral Form - Precision Wound Management</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      color: #212529;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: #2E5B8A;
+      color: white;
+      padding: 30px;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .practice-info {
+      background: #F8F9FA;
+      padding: 20px;
+      border-left: 4px solid #2E5B8A;
+      margin-bottom: 30px;
+    }
+
+    .practice-info p {
+      margin-bottom: 5px;
+    }
+
+    .form-section {
+      margin: 30px 0;
+      padding: 20px;
+      background: white;
+      border: 2px solid #E9ECEF;
+      border-radius: 8px;
+    }
+
+    .form-section h2 {
+      color: #2E5B8A;
+      border-bottom: 2px solid #2E5B8A;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .form-field {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #212529;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #CED4DA;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .submit-info {
+      background: #E7F3FF;
+      padding: 25px;
+      margin-top: 30px;
+      border-left: 4px solid #2E5B8A;
+      border-radius: 4px;
+    }
+
+    .submit-info h3 {
+      color: #2E5B8A;
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .submit-info p {
+      margin-bottom: 10px;
+    }
+
+    .contact-method {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      padding: 10px;
+      background: white;
+      border-radius: 4px;
+    }
+
+    .contact-method strong {
+      min-width: 80px;
+      color: #2E5B8A;
+    }
+
+    .urgent-box {
+      background: #FFF3CD;
+      border-left: 4px solid #FFC107;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 4px;
+    }
+
+    .urgent-box strong {
+      color: #856404;
+    }
+
+    .checkbox-group {
+      margin: 20px 0;
+    }
+
+    .checkbox-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+
+    @media print {
+      body {
+        margin: 0;
+        padding: 20px;
+      }
+
+      .header {
+        background: none;
+        color: #2E5B8A;
+        border: 2px solid #2E5B8A;
+      }
+
+      input, textarea {
+        border: 1px solid #000;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Provider Referral Form</h1>
+    <p>Precision Wound Management, PLLC</p>
+  </div>
+
+  <div class="practice-info">
+    <p><strong>Practice Address:</strong> 2921 Hwy 77, Suite 12-13, Marion, AR 72364</p>
+    <p><strong>Phone:</strong> (870) 559-4252</p>
+    <p><strong>Fax:</strong> (870) 559-4253</p>
+    <p><strong>Hours:</strong> Monday - Friday, 10:00 AM - 5:00 PM</p>
+  </div>
+
+  <div class="form-section">
+    <h2>Referring Provider Information</h2>
+
+    <div class="form-field">
+      <label for="provider-name">Provider Name: *</label>
+      <input type="text" id="provider-name" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="practice-name">Practice Name: *</label>
+        <input type="text" id="practice-name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="specialty">Specialty:</label>
+        <input type="text" id="specialty">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="provider-phone">Phone: *</label>
+        <input type="text" id="provider-phone" required>
+      </div>
+
+      <div class="form-field">
+        <label for="provider-fax">Fax:</label>
+        <input type="text" id="provider-fax">
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="provider-email">Email:</label>
+      <input type="text" id="provider-email">
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Patient Information</h2>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="patient-name">Patient Full Name: *</label>
+        <input type="text" id="patient-name" required>
+      </div>
+
+      <div class="form-field">
+        <label for="patient-dob">Date of Birth: *</label>
+        <input type="date" id="patient-dob" required>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="patient-phone">Phone: *</label>
+        <input type="text" id="patient-phone" required>
+      </div>
+
+      <div class="form-field">
+        <label for="patient-alt-phone">Alternate Phone:</label>
+        <input type="text" id="patient-alt-phone">
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="patient-address">Address:</label>
+      <input type="text" id="patient-address">
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="insurance-primary">Primary Insurance: *</label>
+        <input type="text" id="insurance-primary" required>
+      </div>
+
+      <div class="form-field">
+        <label for="insurance-id">Insurance ID #:</label>
+        <input type="text" id="insurance-id">
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="insurance-secondary">Secondary Insurance:</label>
+      <input type="text" id="insurance-secondary">
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Wound Information</h2>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="wound-location">Wound Location: *</label>
+        <input type="text" id="wound-location" placeholder="e.g., Right lower leg, left heel" required>
+      </div>
+
+      <div class="form-field">
+        <label for="wound-duration">Duration: *</label>
+        <input type="text" id="wound-duration" placeholder="e.g., 6 weeks, 3 months" required>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="wound-type">Wound Type: *</label>
+      <input type="text" id="wound-type" placeholder="e.g., Diabetic ulcer, pressure injury, venous ulcer" required>
+    </div>
+
+    <div class="form-field">
+      <label for="wound-size">Approximate Size:</label>
+      <input type="text" id="wound-size" placeholder="e.g., 2cm x 3cm">
+    </div>
+
+    <div class="form-field">
+      <label>Relevant Medical History:</label>
+      <div class="checkbox-group">
+        <div class="checkbox-item">
+          <input type="checkbox" id="diabetes">
+          <label for="diabetes">Diabetes (Type 1 / Type 2)</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="pvd">
+          <label for="pvd">Peripheral Vascular Disease</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="venous">
+          <label for="venous">Venous Insufficiency</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="immobility">
+          <label for="immobility">Immobility / Limited Mobility</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="neuropathy">
+          <label for="neuropathy">Neuropathy</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="immunocompromised">
+          <label for="immunocompromised">Immunocompromised</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="current-treatment">Current Treatment / Dressings: *</label>
+      <textarea id="current-treatment" placeholder="Please describe current wound care regimen, dressings used, frequency of changes, etc." required></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="previous-treatment">Previous Treatments Attempted:</label>
+      <textarea id="previous-treatment" placeholder="Include any treatments that have been tried (debridement, compression, offloading, etc.)"></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="referral-reason">Reason for Referral: *</label>
+      <textarea id="referral-reason" placeholder="e.g., Wound not healing, infection concerns, complex wound management, second opinion, etc." required></textarea>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Additional Information</h2>
+
+    <div class="form-field">
+      <label for="allergies">Known Allergies:</label>
+      <input type="text" id="allergies" placeholder="Medications, latex, adhesives, etc.">
+    </div>
+
+    <div class="form-field">
+      <label for="medications">Current Medications:</label>
+      <textarea id="medications" placeholder="List relevant medications, especially anticoagulants, immunosuppressants, steroids"></textarea>
+    </div>
+
+    <div class="form-field">
+      <label for="additional-notes">Additional Notes / Special Considerations:</label>
+      <textarea id="additional-notes"></textarea>
+    </div>
+  </div>
+
+  <div class="submit-info">
+    <h3>How to Submit This Referral</h3>
+
+    <div class="contact-method">
+      <strong>Fax:</strong>
+      <span>(870) 559-4253 (HIPAA-secure fax line)</span>
+    </div>
+
+    <div class="contact-method">
+      <strong>Phone:</strong>
+      <span>(870) 559-4252</span>
+    </div>
+
+    <div class="urgent-box">
+      <p><strong>For Urgent Consultations:</strong> Please call our office directly at (870) 559-4252. We offer same-day consultation for urgent wound care referrals.</p>
+    </div>
+
+    <p style="margin-top: 20px;"><strong>What Happens Next:</strong></p>
+    <ol style="margin-left: 20px; margin-top: 10px;">
+      <li>Patient will be contacted within 24 hours of receiving referral</li>
+      <li>Initial consultation will be scheduled at patient's convenience</li>
+      <li>Comprehensive wound assessment will be performed</li>
+      <li>Treatment plan developed in collaboration with referring provider</li>
+      <li>Regular progress reports sent to referring provider</li>
+    </ol>
+  </div>
+
+  <div style="text-align: center; margin-top: 40px; padding: 20px; background: #F8F9FA; border-radius: 8px;">
+    <p style="font-size: 14px; color: #6C757D;">
+      <strong>Precision Wound Management, PLLC</strong><br>
+      Focused Healing. Expert Care.<br>
+      <br>
+      For questions about this form or the referral process, please contact us at (870) 559-4252
+    </p>
+  </div>
+
+</body>
+</html>
