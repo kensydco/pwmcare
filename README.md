@@ -1,6 +1,6 @@
 # Precision Wound Management Website
 
-Professional medical practice website for Precision Wound Management, PLLC - a physician-led wound care practice in Marion, Arkansas.
+Professional medical practice website for Precision Wound Management, LLC - a physician-led wound care practice in Marion, Arkansas.
 
 ![Precision Wound Management](images/placeholders/team-photo.jpg)
 
@@ -8,7 +8,7 @@ Professional medical practice website for Precision Wound Management, PLLC - a p
 
 ## 🏥 Practice Information
 
-**Practice Name:** Precision Wound Management, PLLC
+**Practice Name:** Precision Wound Management, LLC
 
 **Tagline:** Focused Healing. Expert Care.
 
@@ -516,7 +516,7 @@ Potential features for future development:
 
 ## 📄 License
 
-© 2025 Precision Wound Management, PLLC. All rights reserved.
+© 2025 Precision Wound Management, LLC. All rights reserved.
 
 This website code is proprietary and confidential. Unauthorized copying, modification, distribution, or use of this code is strictly prohibited.
 

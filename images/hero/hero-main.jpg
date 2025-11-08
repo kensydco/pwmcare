@@ -1,0 +1,82 @@
+<svg width="1920" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern medical hero image with vibrant colors -->
+  <defs>
+    <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E3D5A;stop-opacity:0.95" />
+      <stop offset="50%" style="stop-color:#2E5B8A;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#4A9B9B;stop-opacity:0.95" />
+    </linearGradient>
+
+    <radialGradient id="lightGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Pattern for medical cross -->
+    <pattern id="crossPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g opacity="0.05">
+        <rect x="90" y="50" width="20" height="100" fill="white"/>
+        <rect x="50" y="90" width="100" height="20" fill="white"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="800" fill="url(#heroGradient)"/>
+  <rect width="1920" height="800" fill="url(#crossPattern)"/>
+
+  <!-- Decorative elements -->
+  <!-- Large glow effect -->
+  <ellipse cx="1400" cy="200" rx="400" ry="400" fill="url(#lightGlow)"/>
+  <ellipse cx="400" cy="600" rx="350" ry="350" fill="url(#lightGlow)"/>
+
+  <!-- Medical imagery - stethoscope inspired shape -->
+  <g opacity="0.15" stroke="white" stroke-width="3" fill="none">
+    <circle cx="300" cy="250" r="40"/>
+    <circle cx="300" cy="250" r="30"/>
+    <path d="M 300 290 Q 300 350 250 400" stroke-width="4"/>
+    <circle cx="250" cy="400" r="45"/>
+    <circle cx="250" cy="400" r="35"/>
+  </g>
+
+  <!-- Heartbeat line visualization -->
+  <g opacity="0.2" stroke="#4ECDC4" stroke-width="4" fill="none">
+    <path d="M 100 400 L 300 400 L 350 300 L 400 500 L 450 400 L 650 400"/>
+    <path d="M 700 400 L 900 400 L 950 300 L 1000 500 L 1050 400 L 1250 400"/>
+    <path d="M 1300 400 L 1500 400 L 1550 300 L 1600 500 L 1650 400 L 1800 400"/>
+  </g>
+
+  <!-- Abstract medical symbols -->
+  <g opacity="0.12">
+    <!-- DNA helix inspired -->
+    <ellipse cx="1600" cy="150" rx="80" ry="15" fill="white" transform="rotate(30 1600 150)"/>
+    <ellipse cx="1600" cy="200" rx="80" ry="15" fill="white" transform="rotate(-30 1600 200)"/>
+    <ellipse cx="1600" cy="250" rx="80" ry="15" fill="white" transform="rotate(30 1600 250)"/>
+    <ellipse cx="1600" cy="300" rx="80" ry="15" fill="white" transform="rotate(-30 1600 300)"/>
+  </g>
+
+  <!-- Healing hands illustration -->
+  <g opacity="0.1">
+    <ellipse cx="1200" cy="600" rx="80" ry="120" fill="white"/>
+    <ellipse cx="1100" cy="600" rx="80" ry="120" fill="white"/>
+    <circle cx="1150" cy="500" r="60" fill="white"/>
+  </g>
+
+  <!-- Plus symbols for medical context -->
+  <g opacity="0.08" fill="white">
+    <rect x="150" y="100" width="15" height="60"/>
+    <rect x="127.5" y="122.5" width="60" height="15"/>
+
+    <rect x="1700" y="650" width="12" height="48"/>
+    <rect x="1682" y="668" width="48" height="12"/>
+
+    <rect x="800" y="100" width="10" height="40"/>
+    <rect x="785" y="115" width="40" height="10"/>
+  </g>
+
+  <!-- Subtle bokeh effects -->
+  <circle cx="500" cy="150" r="40" fill="white" opacity="0.05"/>
+  <circle cx="1300" cy="700" r="60" fill="white" opacity="0.05"/>
+  <circle cx="900" cy="250" r="35" fill="white" opacity="0.05"/>
+  <circle cx="1600" cy="500" r="50" fill="white" opacity="0.05"/>
+</svg>

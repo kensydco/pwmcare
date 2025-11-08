@@ -1,0 +1,72 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wound care services illustration -->
+  <defs>
+    <linearGradient id="servicesBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F0F8FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#E0F0FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D0E8F7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#servicesBg)"/>
+
+  <!-- Central medical kit icon -->
+  <rect x="250" y="200" width="300" height="200" fill="#2E5B8A" opacity="0.8" rx="10"/>
+  <rect x="270" y="220" width="260" height="160" fill="white" opacity="0.9" rx="5"/>
+
+  <!-- Medical cross on kit -->
+  <rect x="380" y="260" width="40" height="100" fill="#4A9B9B"/>
+  <rect x="360" y="280" width="80" height="60" fill="#4A9B9B"/>
+
+  <!-- Handle -->
+  <rect x="370" y="180" width="60" height="25" fill="#2E5B8A" opacity="0.8" rx="5"/>
+
+  <!-- Surrounding service icons -->
+  <!-- Top left - Assessment -->
+  <g transform="translate(150, 100)">
+    <circle cx="0" cy="0" r="50" fill="#4A9B9B" opacity="0.7"/>
+    <rect x="-20" y="-25" width="40" height="50" fill="white" opacity="0.9" rx="3"/>
+    <line x1="-15" y1="-15" x2="15" y2="-15" stroke="#2E5B8A" stroke-width="2"/>
+    <line x1="-15" y1="-5" x2="15" y2="-5" stroke="#2E5B8A" stroke-width="2"/>
+    <line x1="-15" y1="5" x2="15" y2="5" stroke="#2E5B8A" stroke-width="2"/>
+    <line x1="-15" y1="15" x2="15" y2="15" stroke="#2E5B8A" stroke-width="2"/>
+  </g>
+
+  <!-- Top right - Medication -->
+  <g transform="translate(650, 100)">
+    <circle cx="0" cy="0" r="50" fill="#6B8E5A" opacity="0.7"/>
+    <rect x="-15" y="-25" width="30" height="50" fill="white" opacity="0.9" rx="3"/>
+    <circle cx="0" cy="-15" r="8" fill="#4A9B9B"/>
+    <circle cx="0" cy="0" r="8" fill="#4A9B9B"/>
+    <circle cx="0" cy="15" r="8" fill="#4A9B9B"/>
+  </g>
+
+  <!-- Bottom left - Bandage -->
+  <g transform="translate(150, 500)">
+    <circle cx="0" cy="0" r="50" fill="#2E5B8A" opacity="0.7"/>
+    <rect x="-25" y="-10" width="50" height="20" fill="white" opacity="0.9" rx="10"/>
+    <rect x="-5" y="-10" width="10" height="20" fill="#4A9B9B"/>
+  </g>
+
+  <!-- Bottom right - Heart Monitor -->
+  <g transform="translate(650, 500)">
+    <circle cx="0" cy="0" r="50" fill="#4A9B9B" opacity="0.7"/>
+    <polyline points="-20,0 -10,0 -5,-15 0,15 5,0 20,0"
+              stroke="white" stroke-width="3" fill="none" opacity="0.9"/>
+  </g>
+
+  <!-- Connecting lines (showing integrated care) -->
+  <g opacity="0.2" stroke="#2E5B8A" stroke-width="2" stroke-dasharray="5,5">
+    <line x1="150" y1="150" x2="300" y2="250"/>
+    <line x1="650" y1="150" x2="500" y2="250"/>
+    <line x1="150" y1="450" x2="300" y2="350"/>
+    <line x1="650" y1="450" x2="500" y2="350"/>
+  </g>
+
+  <!-- Title overlay -->
+  <rect x="100" y="30" width="600" height="60" fill="rgba(46, 91, 138, 0.9)" rx="8"/>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">
+    Comprehensive Wound Care Services
+  </text>
+</svg>

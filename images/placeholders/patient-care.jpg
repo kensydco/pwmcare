@@ -1,0 +1,71 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Patient care illustration -->
+  <defs>
+    <linearGradient id="careBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E7F3FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4E9F7;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="personGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#4A9B9B;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4A9B9B;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#careBg)"/>
+
+  <!-- Medical cross in background -->
+  <g opacity="0.08">
+    <rect x="360" y="150" width="80" height="300" fill="#2E5B8A"/>
+    <rect x="260" y="250" width="280" height="100" fill="#2E5B8A"/>
+  </g>
+
+  <!-- Healthcare provider figure (left) -->
+  <ellipse cx="250" cy="450" rx="100" ry="80" fill="url(#personGlow)"/>
+  <circle cx="250" cy="280" r="60" fill="#2E5B8A" opacity="0.7"/>
+  <ellipse cx="250" cy="380" rx="80" ry="100" fill="#2E5B8A" opacity="0.7"/>
+
+  <!-- White coat effect -->
+  <ellipse cx="250" cy="380" rx="75" ry="95" fill="white" opacity="0.8"/>
+
+  <!-- Patient figure (right) -->
+  <ellipse cx="550" cy="450" rx="90" ry="70" fill="url(#personGlow)"/>
+  <circle cx="550" cy="290" r="55" fill="#6B8E5A" opacity="0.6"/>
+  <ellipse cx="550" cy="385" rx="75" ry="95" fill="#6B8E5A" opacity="0.6"/>
+
+  <!-- Caring hands gesture between them -->
+  <ellipse cx="320" cy="350" rx="40" ry="25" fill="#2E5B8A" opacity="0.5" transform="rotate(-20 320 350)"/>
+  <ellipse cx="480" cy="360" rx="40" ry="25" fill="#6B8E5A" opacity="0.5" transform="rotate(20 480 360)"/>
+
+  <!-- Heart symbol above (representing care) -->
+  <g transform="translate(400, 250)">
+    <path d="M 0,-20 C -30,-40 -50,-20 -50,0 C -50,25 0,50 0,50 C 0,50 50,25 50,0 C 50,-20 30,-40 0,-20 Z"
+          fill="#4A9B9B" opacity="0.6"/>
+  </g>
+
+  <!-- Decorative medical symbols -->
+  <g opacity="0.3" stroke="#2E5B8A" stroke-width="2" fill="none">
+    <circle cx="100" cy="100" r="30"/>
+    <line x1="100" y1="85" x2="100" y2="115"/>
+    <line x1="85" y1="100" x2="115" y2="100"/>
+  </g>
+
+  <g opacity="0.3" stroke="#4A9B9B" stroke-width="2" fill="none">
+    <circle cx="700" cy="500" r="25"/>
+    <line x1="700" y1="488" x2="700" y2="512"/>
+    <line x1="688" y1="500" x2="712" y2="500"/>
+  </g>
+
+  <!-- Pulse line decoration -->
+  <path d="M 50 550 L 150 550 L 180 520 L 210 550 L 750 550"
+        stroke="#4A9B9B" stroke-width="3" fill="none" opacity="0.4"/>
+
+  <!-- Text overlay -->
+  <rect x="50" y="50" width="700" height="80" fill="rgba(46, 91, 138, 0.85)" rx="8"/>
+  <text x="400" y="85" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">
+    Compassionate Expert Care
+  </text>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">
+    Patient-Centered Wound Management
+  </text>
+</svg>

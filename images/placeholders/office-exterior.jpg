@@ -1,0 +1,64 @@
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Office building placeholder -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#D3D3D3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A9A9A9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="800" fill="url(#skyGradient)"/>
+
+  <!-- Building -->
+  <rect x="200" y="200" width="800" height="500" fill="url(#buildingGradient)"/>
+
+  <!-- Windows - Grid pattern -->
+  <g fill="#4A9B9B" opacity="0.6">
+    <!-- Row 1 -->
+    <rect x="250" y="250" width="100" height="80"/>
+    <rect x="400" y="250" width="100" height="80"/>
+    <rect x="550" y="250" width="100" height="80"/>
+    <rect x="700" y="250" width="100" height="80"/>
+    <rect x="850" y="250" width="100" height="80"/>
+
+    <!-- Row 2 -->
+    <rect x="250" y="370" width="100" height="80"/>
+    <rect x="400" y="370" width="100" height="80"/>
+    <rect x="550" y="370" width="100" height="80"/>
+    <rect x="700" y="370" width="100" height="80"/>
+    <rect x="850" y="370" width="100" height="80"/>
+
+    <!-- Row 3 -->
+    <rect x="250" y="490" width="100" height="80"/>
+    <rect x="400" y="490" width="100" height="80"/>
+    <rect x="700" y="490" width="100" height="80"/>
+    <rect x="850" y="490" width="100" height="80"/>
+  </g>
+
+  <!-- Entrance -->
+  <rect x="530" y="490" width="140" height="210" fill="#2E5B8A"/>
+  <rect x="545" y="510" width="110" height="170" fill="#87CEEB" opacity="0.5"/>
+
+  <!-- Awning -->
+  <polygon points="520,480 680,480 700,500 500,500" fill="#2E5B8A"/>
+
+  <!-- Ground/Landscaping -->
+  <rect x="0" y="700" width="1200" height="100" fill="#6B8E5A"/>
+
+  <!-- Sidewalk -->
+  <rect x="0" y="680" width="1200" height="20" fill="#999999"/>
+
+  <!-- Text overlay -->
+  <rect x="300" y="650" width="600" height="80" fill="rgba(46, 91, 138, 0.9)" rx="8"/>
+  <text x="600" y="690" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="white" text-anchor="middle">
+    Precision Wound Management
+  </text>
+  <text x="600" y="720" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">
+    2921 Hwy 77, Suite 12-13, Marion, AR
+  </text>
+</svg>

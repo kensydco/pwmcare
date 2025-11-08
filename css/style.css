@@ -190,6 +190,7 @@ img {
 .nav-menu li a {
   color: var(--text-dark);
   font-weight: 600;
+  font-size: 0.95rem;
   padding: 0.5rem 0;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease;
@@ -208,7 +209,7 @@ img {
 }
 
 .btn-phone {
-  background-color: var(--accent-green);
+  background-color: var(--secondary-teal);
   color: white;
   padding: 12px 24px;
   border: none;
@@ -224,7 +225,7 @@ img {
 
 .btn-phone:hover,
 .btn-phone:focus {
-  background-color: #5A7E4A;
+  background-color: #3A8B8B;
   color: white;
 }
 
