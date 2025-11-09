@@ -1,0 +1,111 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Professional medical facility exterior -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0E0E6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="buildingGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0E0E0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDBDBD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="entranceGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E5B8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A9B9B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1200" height="400" fill="url(#skyGrad)"/>
+
+  <!-- Clouds -->
+  <ellipse cx="200" cy="80" rx="60" ry="25" fill="white" opacity="0.7"/>
+  <ellipse cx="230" cy="85" rx="50" ry="20" fill="white" opacity="0.7"/>
+  <ellipse cx="800" cy="60" rx="70" ry="30" fill="white" opacity="0.6"/>
+  <ellipse cx="840" cy="65" rx="55" ry="25" fill="white" opacity="0.6"/>
+
+  <!-- Ground -->
+  <rect x="0" y="320" width="1200" height="80" fill="#6B8E5A"/>
+
+  <!-- Parking lot -->
+  <rect x="0" y="300" width="1200" height="20" fill="#808080"/>
+  <line x1="100" y1="310" x2="200" y2="310" stroke="white" stroke-width="2" stroke-dasharray="10,10"/>
+  <line x1="300" y1="310" x2="400" y2="310" stroke="white" stroke-width="2" stroke-dasharray="10,10"/>
+
+  <!-- Main building -->
+  <rect x="250" y="120" width="700" height="180" fill="url(#buildingGrad)"/>
+
+  <!-- Building windows - professional grid -->
+  <g fill="#87CEEB" opacity="0.6">
+    <!-- Top row -->
+    <rect x="290" y="140" width="70" height="60"/>
+    <rect x="390" y="140" width="70" height="60"/>
+    <rect x="490" y="140" width="70" height="60"/>
+    <rect x="590" y="140" width="70" height="60"/>
+    <rect x="690" y="140" width="70" height="60"/>
+    <rect x="790" y="140" width="70" height="60"/>
+
+    <!-- Bottom row -->
+    <rect x="290" y="220" width="70" height="60"/>
+    <rect x="390" y="220" width="70" height="60"/>
+    <rect x="790" y="220" width="70" height="60"/>
+    <rect x="890" y="220" width="70" height="60"/>
+  </g>
+
+  <!-- Entrance area -->
+  <rect x="480" y="220" width="240" height="80" fill="url(#entranceGrad)"/>
+
+  <!-- Glass doors -->
+  <rect x="510" y="235" width="80" height="60" fill="#B0E0E6" opacity="0.7"/>
+  <rect x="610" y="235" width="80" height="60" fill="#B0E0E6" opacity="0.7"/>
+  <line x1="550" y1="235" x2="550" y2="295" stroke="#2E5B8A" stroke-width="3"/>
+  <line x1="650" y1="235" x2="650" y2="295" stroke="#2E5B8A" stroke-width="3"/>
+
+  <!-- Awning -->
+  <polygon points="460,215 740,215 720,230 480,230" fill="#2E5B8A" opacity="0.8"/>
+
+  <!-- Signage -->
+  <rect x="350" y="165" width="500" height="40" fill="white" opacity="0.95" rx="5"/>
+  <text x="600" y="193" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2E5B8A" text-anchor="middle">
+    PRECISION WOUND MANAGEMENT
+  </text>
+
+  <!-- Suite number sign -->
+  <rect x="495" y="250" width="80" height="30" fill="white" opacity="0.9" rx="3"/>
+  <text x="535" y="271" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2E5B8A" text-anchor="middle">
+    Suites 12-13
+  </text>
+
+  <!-- Trees/Landscaping -->
+  <!-- Tree 1 -->
+  <ellipse cx="150" cy="240" rx="50" ry="60" fill="#6B8E5A" opacity="0.8"/>
+  <rect x="140" y="250" width="20" height="50" fill="#8B4513"/>
+
+  <!-- Tree 2 -->
+  <ellipse cx="1050" cy="240" rx="50" ry="60" fill="#6B8E5A" opacity="0.8"/>
+  <rect x="1040" y="250" width="20" height="50" fill="#8B4513"/>
+
+  <!-- Bushes -->
+  <ellipse cx="250" cy="290" rx="40" ry="25" fill="#6B8E5A" opacity="0.7"/>
+  <ellipse cx="950" cy="290" rx="40" ry="25" fill="#6B8E5A" opacity="0.7"/>
+
+  <!-- Handicap accessible sign -->
+  <g transform="translate(400, 305)">
+    <rect x="-15" y="-20" width="30" height="40" fill="#2E5B8A" rx="3"/>
+    <circle cx="0" cy="-8" r="4" fill="white"/>
+    <circle cx="0" cy="8" r="8" fill="none" stroke="white" stroke-width="2"/>
+    <path d="M -3 8 L 3 8 L 3 12 L 5 15 L 3 15 L 1 12 L -1 12 L -1 15 L -3 15 Z" fill="white"/>
+  </g>
+
+  <!-- Overlay with text -->
+  <rect x="0" y="0" width="1200" height="400" fill="rgba(46, 91, 138, 0.15)"/>
+
+  <!-- Location info overlay -->
+  <rect x="50" y="30" width="500" height="70" fill="rgba(255, 255, 255, 0.95)" rx="8"/>
+  <text x="300" y="58" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#2E5B8A" text-anchor="middle">
+    Visit Our Marion Office
+  </text>
+  <text x="300" y="85" font-family="Arial, sans-serif" font-size="16" fill="#6C757D" text-anchor="middle">
+    2921 Hwy 77, Suite 12-13, Marion, AR 72364
+  </text>
+</svg>
