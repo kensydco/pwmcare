@@ -139,8 +139,21 @@ img {
 }
 
 .logo a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   text-decoration: none;
+}
+
+.logo-image {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+.logo-text-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-text {
