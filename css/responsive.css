@@ -70,6 +70,16 @@
     gap: 1rem;
   }
 
+  .logo {
+    text-align: center;
+  }
+
+  .logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .logo-text {
     font-size: 1rem;
   }
@@ -77,10 +87,12 @@
   .logo-image {
     height: 40px;
     max-width: 200px;
+    margin: 0 auto 0.25rem;
   }
 
   .tagline {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
+    text-align: center;
   }
 
   .header-contact {
