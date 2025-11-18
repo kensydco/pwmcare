@@ -360,6 +360,11 @@
     font-size: 1.5rem;
   }
 
+  /* Decrease menu font size for desktop */
+  .nav-menu li a {
+    font-size: 0.75rem;
+  }
+
   .services-grid {
     grid-template-columns: repeat(3, 1fr);
   }
