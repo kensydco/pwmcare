@@ -74,6 +74,11 @@
     font-size: 1rem;
   }
 
+  .logo-image {
+    height: 40px;
+    max-width: 200px;
+  }
+
   .tagline {
     font-size: 0.75rem;
   }
