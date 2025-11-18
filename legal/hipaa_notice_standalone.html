@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPAA Notice of Privacy Practices - Precision Wound Management</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #1a5490;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #1a5490;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .practice-info {
+            font-size: 16px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .effective-date {
+            background: #e7f3ff;
+            padding: 15px;
+            border-left: 4px solid #1a5490;
+            margin: 30px 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: #0066cc;
+        }
+
+        .important-notice {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+            font-size: 15px;
+            color: #856404;
+        }
+
+        h2 {
+            color: #1a5490;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h3 {
+            color: #2c5282;
+            font-size: 19px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #4a5568;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .example-box {
+            background: #f8f9fa;
+            border-left: 4px solid #6c757d;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        .example-box h4 {
+            color: #495057;
+            margin-top: 0;
+            font-style: normal;
+        }
+
+        .contact-box {
+            background: #e7f3ff;
+            border: 2px solid #1a5490;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .contact-box h3 {
+            color: #1a5490;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            line-height: 2;
+        }
+
+        .rights-section {
+            background: #f0f9ff;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+            border: 1px solid #bfdbfe;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 3px solid #1a5490;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .print-button {
+            background: #1a5490;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 20px 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .print-button:hover {
+            background: #0f3d6f;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 40px;
+            }
+            
+            .print-button {
+                display: none;
+            }
+            
+            h2 {
+                page-break-after: avoid;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            h3 {
+                font-size: 17px;
+            }
+        }
+
+        .commitment-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .commitment-box h2 {
+            color: white;
+            border: none;
+            margin-top: 0;
+        }
+
+        strong {
+            color: #1a5490;
+        }
+
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="print-button" onclick="window.print()">🖨️ Print This Notice</button>
+
+        <div class="header">
+            <h1>Notice of Privacy Practices</h1>
+            <div class="practice-info">
+                <strong>Precision Wound Management, PLLC</strong><br>
+                2921 Hwy 77, Suite 12-13<br>
+                Marion, AR 72364<br>
+                Phone: [Practice Phone Number]<br>
+                Fax: [Practice Fax Number]<br>
+                Email: [Practice Email]
+            </div>
+        </div>
+
+        <div class="effective-date">
+            <strong>Effective Date:</strong> October 1, 2025
+        </div>
+
+        <div class="important-notice">
+            THIS NOTICE DESCRIBES HOW MEDICAL INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED AND HOW YOU CAN GET ACCESS TO THIS INFORMATION. PLEASE REVIEW IT CAREFULLY.
+        </div>
+
+        <div class="commitment-box">
+            <h2>Our Commitment to Your Privacy</h2>
+            <p>Precision Wound Management, PLLC ("PWM," "we," "us," or "our") is committed to protecting the privacy of your health information. This Notice of Privacy Practices ("Notice") describes how we may use and disclose your Protected Health Information (PHI) to carry out treatment, payment, or healthcare operations, and for other purposes permitted or required by law.</p>
+        </div>
+
+        <p><strong>Protected Health Information (PHI)</strong> is information about you, including demographic information, that may identify you and relates to your past, present, or future physical or mental health condition and related healthcare services.</p>
+
+        <p>We are required by the Health Insurance Portability and Accountability Act (HIPAA) to:</p>
+        <ul>
+            <li>Maintain the privacy and security of your PHI</li>
+            <li>Provide you with this Notice of our legal duties and privacy practices</li>
+            <li>Follow the terms of the Notice currently in effect</li>
+            <li>Notify you if we are unable to agree to a requested restriction</li>
+            <li>Accommodate reasonable requests you may have to communicate health information by alternative means or at alternative locations</li>
+        </ul>
+
+        <h2>How We May Use and Disclose Your Health Information</h2>
+        
+        <p>The following categories describe different ways that we may use and disclose your health information. Not every use or disclosure will be listed. However, all of the ways we are permitted to use and disclose information fall within one of these categories.</p>
+
+        <h3>1. For Treatment</h3>
+        <p>We may use and disclose your health information to provide, coordinate, or manage your healthcare and related services. This includes communication with other healthcare providers regarding your treatment and coordination of care.</p>
+
+        <div class="example-box">
+            <h4>Examples:</h4>
+            <ul>
+                <li>Dr. Carter reviews your medical history and wound assessment to develop your treatment plan</li>
+                <li>We share your wound care progress with your referring physician</li>
+                <li>We coordinate with a podiatrist or vascular surgeon regarding your diabetic foot ulcer management</li>
+                <li>We send your wound photographs and treatment notes to a consulting specialist</li>
+                <li>Our nurse practitioner communicates with our medical assistant about your prescribed wound care supplies</li>
+                <li>We coordinate with home health nurses providing follow-up care</li>
+            </ul>
+        </div>
+
+        <h3>2. For Payment</h3>
+        <p>We may use and disclose your health information to obtain payment for healthcare services we provide to you.</p>
+
+        <div class="example-box">
+            <h4>Examples:</h4>
+            <ul>
+                <li>We submit claims to Medicare, Medicaid, or your private insurance company with information about your diagnosis and treatment</li>
+                <li>We verify your insurance coverage and eligibility before providing services</li>
+                <li>We provide documentation to your insurance company to support medical necessity of treatments</li>
+                <li>We work with collection agencies to collect outstanding balances (providing only minimum necessary information)</li>
+                <li>We coordinate benefits between multiple insurance policies</li>
+                <li>We respond to insurance company requests for additional medical documentation</li>
+            </ul>
+        </div>
+
+        <h3>3. For Healthcare Operations</h3>
+        <p>We may use and disclose your health information for our healthcare operations, which include internal administration and planning, quality improvement activities, and business management.</p>
+
+        <div class="example-box">
+            <h4>Examples:</h4>
+            <ul>
+                <li>We review patient outcomes to assess the quality and effectiveness of our wound care protocols</li>
+                <li>We conduct internal audits to ensure compliance with clinical standards and regulations</li>
+                <li>We train our staff using de-identified or aggregated patient data</li>
+                <li>We conduct peer review and performance evaluations of our providers</li>
+                <li>We perform business planning and management activities</li>
+                <li>We participate in accreditation, certification, licensing, or credentialing activities</li>
+            </ul>
+        </div>
+
+        <h3>4. Appointment Reminders and Health-Related Communications</h3>
+        <p>We may use and disclose your health information to contact you with appointment reminders, information about treatment alternatives, or other health-related benefits and services that may be of interest to you.</p>
+
+        <div class="example-box">
+            <h4>Examples:</h4>
+            <ul>
+                <li>We send appointment reminder texts, emails, or phone calls</li>
+                <li>We contact you about wound care follow-up appointments</li>
+                <li>We provide educational materials about diabetic foot care prevention</li>
+                <li>We inform you about our new IV hydration wellness services</li>
+                <li>We send newsletters with wound healing tips and health information</li>
+            </ul>
+        </div>
+
+        <p><strong>Your Rights:</strong> You have the right to request that we not contact you with appointment reminders or health-related communications. Please contact our Privacy Officer to make this request.</p>
+
+        <h3>5. Business Associates</h3>
+        <p>We may disclose your health information to third-party service providers (called "business associates") who perform services on our behalf, such as:</p>
+        <ul>
+            <li>Medical billing and collection services</li>
+            <li>Electronic medical record (EMR) systems and IT support</li>
+            <li>Medical transcription services</li>
+            <li>Accounting, legal, and consulting services</li>
+            <li>Shredding and document destruction services</li>
+            <li>Cloud storage and data backup services</li>
+        </ul>
+        <p>All business associates are required by law to protect the privacy and security of your health information and may only use or disclose it as specified in our contract with them.</p>
+
+        <h2>Uses and Disclosures That Require Your Authorization</h2>
+
+        <h3>Uses and Disclosures for Marketing</h3>
+        <p>We must obtain your written authorization before using or disclosing your health information for marketing purposes, with limited exceptions (such as face-to-face marketing communications or promotional gifts of nominal value).</p>
+
+        <h3>Sale of Health Information</h3>
+        <p>We will not sell your health information without your written authorization. "Sale" means we receive direct or indirect payment in exchange for your health information.</p>
+
+        <h3>Psychotherapy Notes</h3>
+        <p>If we maintain psychotherapy notes (which we typically do not in wound care practice), we would need your authorization to use or disclose them, with certain exceptions.</p>
+
+        <h3>Other Uses</h3>
+        <p>Other uses and disclosures not described in this Notice will be made only with your written authorization. You may revoke your authorization in writing at any time, except to the extent that we have already taken action in reliance on your authorization.</p>
+
+        <h2>Uses and Disclosures That Do Not Require Your Authorization or Permission</h2>
+
+        <p>We may use and disclose your health information without your authorization for the following purposes, as permitted or required by law:</p>
+
+        <h3>1. When Required by Law</h3>
+        <p>We may disclose your health information when required by federal, state, or local law, including regulations and court orders.</p>
+
+        <h3>2. Public Health Activities</h3>
+        <p>We may disclose your health information to public health authorities for activities such as:</p>
+        <ul>
+            <li>Preventing or controlling disease, injury, or disability</li>
+            <li>Reporting disease, vital events (births, deaths), and suspected abuse or neglect</li>
+            <li>Reporting reactions to medications or problems with medical products</li>
+            <li>Notifying persons who may have been exposed to a disease or at risk of contracting or spreading a disease</li>
+        </ul>
+
+        <h3>3. Health Oversight Activities</h3>
+        <p>We may disclose your health information to health oversight agencies for activities authorized by law, including audits, investigations, inspections, licensure proceedings, and other activities necessary for appropriate oversight of the healthcare system.</p>
+
+        <h3>4. Judicial and Administrative Proceedings</h3>
+        <p>We may disclose your health information in response to court orders, subpoenas, discovery requests in litigation, or administrative tribunal orders.</p>
+
+        <h3>5. Law Enforcement</h3>
+        <p>We may disclose your health information to law enforcement officials for purposes such as responding to court orders, identifying suspects, reporting crimes, or providing information in emergency circumstances.</p>
+
+        <h3>6. Coroners, Medical Examiners, and Funeral Directors</h3>
+        <p>We may disclose your health information to coroners, medical examiners, or funeral directors to identify deceased persons, determine cause of death, or enable them to carry out their duties.</p>
+
+        <h3>7. Organ and Tissue Donation</h3>
+        <p>If you are an organ donor, we may disclose your health information to organizations that handle organ procurement, transplantation, or tissue banking.</p>
+
+        <h3>8. Research</h3>
+        <p>Under certain circumstances, we may use and disclose your health information for research purposes without your authorization, if an Institutional Review Board has approved the research and waived the requirement for authorization, or if the research meets other specific criteria.</p>
+
+        <h3>9. Serious Threat to Health or Safety</h3>
+        <p>We may use or disclose your health information if we believe it is necessary to prevent or lessen a serious and imminent threat to your health or safety, or the health or safety of the public or another person.</p>
+
+        <h3>10. Specialized Government Functions</h3>
+        <p>We may disclose your health information for specialized government functions, such as military and veterans' activities, national security and intelligence activities, protective services for the President, or correctional institutions.</p>
+
+        <h3>11. Workers' Compensation</h3>
+        <p>We may disclose your health information as authorized by and to comply with workers' compensation laws or similar programs that provide benefits for work-related injuries or illness.</p>
+
+        <h3>12. Victims of Abuse, Neglect, or Domestic Violence</h3>
+        <p>We may disclose your health information to appropriate government authorities if we reasonably believe you are a victim of abuse, neglect, or domestic violence, to the extent required or permitted by law.</p>
+
+        <h3>13. Inmates</h3>
+        <p>If you are an inmate of a correctional institution or under the custody of law enforcement, we may disclose your health information to the correctional institution or law enforcement official if necessary for your health and safety, the health and safety of others, or the safety and security of the correctional institution.</p>
+
+        <div class="rights-section">
+            <h2>Your Rights Regarding Your Health Information</h2>
+
+            <p>You have the following rights regarding your health information:</p>
+
+            <h3>1. Right to Request Restrictions</h3>
+            <p>You have the right to request restrictions on certain uses and disclosures of your health information. We are not required to agree to your request, except in one situation: if you pay for a service or item out-of-pocket in full and you request that we not disclose information about that service or item to your health insurer, we must honor that request unless disclosure is required by law.</p>
+            <p><strong>How to Exercise:</strong> Submit your request in writing to our Privacy Officer.</p>
+
+            <h3>2. Right to Request Confidential Communications</h3>
+            <p>You have the right to request that we communicate with you about your health information in a certain way or at a certain location. We will accommodate all reasonable requests.</p>
+            <p><strong>Examples:</strong> You may ask that we contact you only at your work phone number or send mail to a P.O. Box instead of your home address.</p>
+            <p><strong>How to Exercise:</strong> Submit your request in writing to our Privacy Officer, specifying how or where you wish to be contacted.</p>
+
+            <h3>3. Right to Inspect and Copy</h3>
+            <p>You have the right to inspect and obtain a copy of your health information, including medical and billing records, for as long as we maintain the information.</p>
+            <p><strong>How to Exercise:</strong> Submit your request in writing to our Privacy Officer using our medical records request form.</p>
+            <p><strong>Fees:</strong> We may charge a reasonable, cost-based fee for copying, mailing, and supplies.</p>
+            <p><strong>Timeframe:</strong> We will respond within 30 days and may take up to an additional 30 days if needed.</p>
+
+            <h3>4. Right to Amend</h3>
+            <p>If you believe that information in your medical record is incorrect or incomplete, you have the right to request that we amend the information.</p>
+            <p><strong>How to Exercise:</strong> Submit your request in writing to our Privacy Officer, along with the reason supporting your request.</p>
+            <p><strong>Timeframe:</strong> We will respond within 60 days and may take up to an additional 30 days if needed.</p>
+
+            <h3>5. Right to an Accounting of Disclosures</h3>
+            <p>You have the right to request an "accounting of disclosures," which is a list of certain disclosures we have made of your health information within the six years prior to your request (or a shorter period if you specify).</p>
+            <p><strong>How to Exercise:</strong> Submit your request in writing to our Privacy Officer. The first accounting within a 12-month period will be free; we may charge a fee for additional requests.</p>
+            <p><strong>Timeframe:</strong> We will respond within 60 days and may take up to an additional 30 days if needed.</p>
+
+            <h3>6. Right to a Paper Copy of This Notice</h3>
+            <p>You have the right to receive a paper copy of this Notice at any time, even if you have previously agreed to receive it electronically.</p>
+            <p><strong>How to Exercise:</strong> Contact our office or visit our website at pwmcare.com to download and print a copy.</p>
+
+            <h3>7. Right to Be Notified of a Breach</h3>
+            <p>You have the right to be notified if we discover a breach of your unsecured health information. We will notify you promptly if a breach occurs that may have compromised the privacy or security of your health information.</p>
+
+            <h3>8. Right to Opt Out of Fundraising Communications</h3>
+            <p>PWM does not currently conduct fundraising activities. If we do so in the future, you will have the right to opt out of receiving fundraising communications from us.</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>How to Exercise Your Rights</h3>
+            <p>To exercise any of the rights described above, please contact our Privacy Officer:</p>
+            <div class="contact-info">
+                <strong>Privacy Officer</strong><br>
+                Precision Wound Management, PLLC<br>
+                2921 Hwy 77, Suite 12-13<br>
+                Marion, AR 72364<br>
+                <strong>Phone:</strong> [Practice Phone Number]<br>
+                <strong>Email:</strong> [Practice Email Address]<br>
+                <strong>Website:</strong> pwmcare.com
+            </div>
+            <p style="margin-top: 15px;">Most requests must be submitted in writing. Request forms are available at our office or on our website. We will respond to your requests within the timeframes required by law.</p>
+        </div>
+
+        <h2>Complaints</h2>
+
+        <p>If you believe your privacy rights have been violated, you may file a complaint with PWM or with the U.S. Department of Health and Human Services (HHS).</p>
+
+        <h3>Filing a Complaint with PWM</h3>
+        <div class="contact-info">
+            <strong>Privacy Officer</strong><br>
+            Precision Wound Management, PLLC<br>
+            2921 Hwy 77, Suite 12-13<br>
+            Marion, AR 72364<br>
+            <strong>Phone:</strong> [Practice Phone Number]<br>
+            <strong>Email:</strong> [Practice Email Address]
+        </div>
+        <p>Please submit your complaint in writing, describing the issue and providing relevant details.</p>
+
+        <h3>Filing a Complaint with HHS</h3>
+        <div class="contact-info">
+            U.S. Department of Health and Human Services<br>
+            Office for Civil Rights<br>
+            200 Independence Avenue, S.W.<br>
+            Washington, D.C. 20201<br>
+            <strong>Phone:</strong> 1-877-696-6775<br>
+            <strong>Website:</strong> www.hhs.gov/ocr/privacy/hipaa/complaints
+        </div>
+        <p>You may file a complaint online through the HHS Office for Civil Rights Health Information Privacy Complaint Portal.</p>
+
+        <div class="important-notice">
+            <strong>You will not be penalized or retaliated against for filing a complaint.</strong> We support your right to protect your privacy and will not take any negative action against you if you exercise this right.
+        </div>
+
+        <h2>Changes to This Notice</h2>
+
+        <p>We reserve the right to change this Notice at any time. Any changes will apply to all health information we maintain, including information created or received before the change.</p>
+
+        <p><strong>How We Will Notify You:</strong></p>
+        <ul>
+            <li>We will post the current Notice in our office and on our website (pwmcare.com)</li>
+            <li>We will provide you with a copy of the revised Notice upon request</li>
+            <li>We will provide you with the revised Notice at your next appointment following a material change</li>
+            <li>The effective date of the Notice will be displayed in the header</li>
+        </ul>
+
+        <p><strong>Your Rights:</strong> You have the right to obtain a copy of the current Notice at any time by contacting our office or visiting our website.</p>
+
+        <h2>Additional Information</h2>
+
+        <h3>Electronic Health Records Notice</h3>
+        <p>PWM uses an electronic health record (EHR) system to maintain your health information. Our EHR system (eClinicalWorks) is designed with security features to protect the privacy of your health information, including:</p>
+        <ul>
+            <li>Encryption of data in transit and at rest</li>
+            <li>Access controls limiting who can view your information</li>
+            <li>Audit trails tracking all access to your records</li>
+            <li>Regular security assessments and updates</li>
+            <li>Staff training on privacy and security practices</li>
+        </ul>
+        <p>You have the right to obtain a copy of your health information in electronic format if it is maintained electronically. You also have the right to direct us to transmit your electronic health information to a third party.</p>
+
+        <h3>Patient Portal Access</h3>
+        <p>We offer a patient portal that allows you to securely access your health information online. Through the portal, you may:</p>
+        <ul>
+            <li>View portions of your medical record</li>
+            <li>Request prescription refills</li>
+            <li>Schedule appointments</li>
+            <li>Communicate with your care team</li>
+            <li>Access educational materials</li>
+        </ul>
+        <p><strong>Security Reminder:</strong> You are responsible for protecting the confidentiality of your portal login credentials. Do not share your username or password with anyone. If you believe your account has been compromised, contact our office immediately.</p>
+
+        <h3>State Law</h3>
+        <p>This Notice is intended to comply with both federal HIPAA requirements and Arkansas state law. To the extent that Arkansas law provides greater privacy protections than HIPAA, we will comply with Arkansas law. If you have questions about how Arkansas law may affect your privacy rights, please contact our Privacy Officer.</p>
+
+        <h2>Acknowledgment of Receipt</h2>
+
+        <p>By signing the Acknowledgment of Receipt form, you confirm that you have been provided with a copy of this Notice of Privacy Practices. Your signature is not required as a condition of receiving treatment, payment, enrollment, or eligibility for benefits.</p>
+
+        <p>If you decline to sign the acknowledgment or are unable to sign, we will document our good faith efforts to obtain your acknowledgment and the reason it was not obtained.</p>
+
+        <div class="footer">
+            <p><strong>This Notice of Privacy Practices is effective as of October 1, 2025.</strong></p>
+            <p style="margin-top: 20px;">Thank you for choosing Precision Wound Management for your wound care needs.<br>We are committed to protecting your privacy while providing you with the highest quality of care.</p>
+            <p style="margin-top: 30px; font-size: 12px;">
+                © 2025 Precision Wound Management, PLLC. All rights reserved.<br>
+                2921 Hwy 77, Suite 12-13 | Marion, AR 72364 | pwmcare.com
+            </p>
+        </div>
+    </div>
+</body>
+</html>
