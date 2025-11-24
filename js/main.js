@@ -193,32 +193,8 @@
       });
 
       if (isValid) {
-        // Show success message
-        const successMessage = document.getElementById('form-success');
-        if (successMessage) {
-          successMessage.style.display = 'flex';
-
-          // Scroll to success message
-          const headerHeight = header ? header.offsetHeight : 0;
-          const targetPosition = successMessage.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
-
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
-
-          // Reset form
-          contactForm.reset();
-
-          // Hide success message after 10 seconds
-          setTimeout(function() {
-            successMessage.style.display = 'none';
-          }, 10000);
-
-          // Focus on success message for screen readers
-          successMessage.setAttribute('tabindex', '-1');
-          successMessage.focus();
-        }
+        // Submit the form
+        contactForm.submit();
       } else {
         // Focus on first error
         const firstError = contactForm.querySelector('.form-group.error input, .form-group.error select, .form-group.error textarea');
