@@ -17,8 +17,8 @@ Professional medical practice website for Precision Wound Management, LLC - a ph
 Marion, AR 72364
 
 **Contact:**
-- Phone: (870) 559-4252
-- Fax: (870) 559-4253
+- Phone: (870) 327-6929
+- Fax: (870) 327-6929
 - Email: info@pwmcare.com
 
 **Hours:**
@@ -540,8 +540,8 @@ Kenneth Burnett, MBA
 For website issues or questions:
 
 **Practice Contact:**
-- Phone: (870) 559-4252
-- Fax: (870) 559-4253
+- Phone: (870) 327-6929
+- Fax: (870) 327-6929
 - Email: info@pwmcare.com
 
 **Emergency:**
