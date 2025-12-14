@@ -527,11 +527,11 @@ This website code is proprietary and confidential. Unauthorized copying, modific
 **Medical Director & CEO:**
 Dr. April Carter, MD, JM, MHA, FACP
 
-**Primary Clinical Provider:**
-Aldridge Westrich, NP
-
 **Chief Operating Officer:**
 Kenneth Burnett, MBA
+
+**Patient Experience Coordinator:**
+Kimberly Travis
 
 ---
 
